@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68DF04E82AB7591F00724788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF04E72AB7591F00724788 /* AppDelegate.swift */; };
+		68DF04EA2AB7591F00724788 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF04E92AB7591F00724788 /* SceneDelegate.swift */; };
+		68DF04EC2AB7591F00724788 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF04EB2AB7591F00724788 /* ViewController.swift */; };
+		68DF04EF2AB7591F00724788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68DF04ED2AB7591F00724788 /* Main.storyboard */; };
+		68DF04F12AB7592400724788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DF04F02AB7592400724788 /* Assets.xcassets */; };
+		68DF04F42AB7592400724788 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68DF04F22AB7592400724788 /* LaunchScreen.storyboard */; };
+		68DF04FF2AB7592500724788 /* MobiletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF04FE2AB7592500724788 /* MobiletTests.swift */; };
+		68DF05092AB7592500724788 /* MobiletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF05082AB7592500724788 /* MobiletUITests.swift */; };
+		68DF050B2AB7592500724788 /* MobiletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF050A2AB7592500724788 /* MobiletUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68DF04FB2AB7592500724788 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68DF04DC2AB7591F00724788 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68DF04E32AB7591F00724788;
+			remoteInfo = Mobilet;
+		};
+		68DF05052AB7592500724788 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68DF04DC2AB7591F00724788 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68DF04E32AB7591F00724788;
+			remoteInfo = Mobilet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68DF04E42AB7591F00724788 /* Mobilet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mobilet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68DF04E72AB7591F00724788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68DF04E92AB7591F00724788 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		68DF04EB2AB7591F00724788 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68DF04EE2AB7591F00724788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68DF04F02AB7592400724788 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68DF04F32AB7592400724788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68DF04F52AB7592400724788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68DF04FA2AB7592500724788 /* MobiletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68DF04FE2AB7592500724788 /* MobiletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiletTests.swift; sourceTree = "<group>"; };
+		68DF05042AB7592500724788 /* MobiletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68DF05082AB7592500724788 /* MobiletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiletUITests.swift; sourceTree = "<group>"; };
+		68DF050A2AB7592500724788 /* MobiletUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiletUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68DF04E12AB7591F00724788 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68DF04F72AB7592500724788 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68DF05012AB7592500724788 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68DF04DB2AB7591F00724788 = {
+			isa = PBXGroup;
+			children = (
+				68DF04E62AB7591F00724788 /* Mobilet */,
+				68DF04FD2AB7592500724788 /* MobiletTests */,
+				68DF05072AB7592500724788 /* MobiletUITests */,
+				68DF04E52AB7591F00724788 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68DF04E52AB7591F00724788 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68DF04E42AB7591F00724788 /* Mobilet.app */,
+				68DF04FA2AB7592500724788 /* MobiletTests.xctest */,
+				68DF05042AB7592500724788 /* MobiletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68DF04E62AB7591F00724788 /* Mobilet */ = {
+			isa = PBXGroup;
+			children = (
+				68DF04E72AB7591F00724788 /* AppDelegate.swift */,
+				68DF04E92AB7591F00724788 /* SceneDelegate.swift */,
+				68DF04EB2AB7591F00724788 /* ViewController.swift */,
+				68DF04ED2AB7591F00724788 /* Main.storyboard */,
+				68DF04F02AB7592400724788 /* Assets.xcassets */,
+				68DF04F22AB7592400724788 /* LaunchScreen.storyboard */,
+				68DF04F52AB7592400724788 /* Info.plist */,
+			);
+			path = Mobilet;
+			sourceTree = "<group>";
+		};
+		68DF04FD2AB7592500724788 /* MobiletTests */ = {
+			isa = PBXGroup;
+			children = (
+				68DF04FE2AB7592500724788 /* MobiletTests.swift */,
+			);
+			path = MobiletTests;
+			sourceTree = "<group>";
+		};
+		68DF05072AB7592500724788 /* MobiletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				68DF05082AB7592500724788 /* MobiletUITests.swift */,
+				68DF050A2AB7592500724788 /* MobiletUITestsLaunchTests.swift */,
+			);
+			path = MobiletUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68DF04E32AB7591F00724788 /* Mobilet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68DF050E2AB7592500724788 /* Build configuration list for PBXNativeTarget "Mobilet" */;
+			buildPhases = (
+				68DF04E02AB7591F00724788 /* Sources */,
+				68DF04E12AB7591F00724788 /* Frameworks */,
+				68DF04E22AB7591F00724788 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mobilet;
+			productName = Mobilet;
+			productReference = 68DF04E42AB7591F00724788 /* Mobilet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68DF04F92AB7592500724788 /* MobiletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68DF05112AB7592500724788 /* Build configuration list for PBXNativeTarget "MobiletTests" */;
+			buildPhases = (
+				68DF04F62AB7592500724788 /* Sources */,
+				68DF04F72AB7592500724788 /* Frameworks */,
+				68DF04F82AB7592500724788 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68DF04FC2AB7592500724788 /* PBXTargetDependency */,
+			);
+			name = MobiletTests;
+			productName = MobiletTests;
+			productReference = 68DF04FA2AB7592500724788 /* MobiletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		68DF05032AB7592500724788 /* MobiletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68DF05142AB7592500724788 /* Build configuration list for PBXNativeTarget "MobiletUITests" */;
+			buildPhases = (
+				68DF05002AB7592500724788 /* Sources */,
+				68DF05012AB7592500724788 /* Frameworks */,
+				68DF05022AB7592500724788 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68DF05062AB7592500724788 /* PBXTargetDependency */,
+			);
+			name = MobiletUITests;
+			productName = MobiletUITests;
+			productReference = 68DF05042AB7592500724788 /* MobiletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68DF04DC2AB7591F00724788 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					68DF04E32AB7591F00724788 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					68DF04F92AB7592500724788 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 68DF04E32AB7591F00724788;
+					};
+					68DF05032AB7592500724788 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 68DF04E32AB7591F00724788;
+					};
+				};
+			};
+			buildConfigurationList = 68DF04DF2AB7591F00724788 /* Build configuration list for PBXProject "Mobilet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68DF04DB2AB7591F00724788;
+			productRefGroup = 68DF04E52AB7591F00724788 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68DF04E32AB7591F00724788 /* Mobilet */,
+				68DF04F92AB7592500724788 /* MobiletTests */,
+				68DF05032AB7592500724788 /* MobiletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68DF04E22AB7591F00724788 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DF04F42AB7592400724788 /* LaunchScreen.storyboard in Resources */,
+				68DF04F12AB7592400724788 /* Assets.xcassets in Resources */,
+				68DF04EF2AB7591F00724788 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68DF04F82AB7592500724788 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68DF05022AB7592500724788 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68DF04E02AB7591F00724788 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DF04EC2AB7591F00724788 /* ViewController.swift in Sources */,
+				68DF04E82AB7591F00724788 /* AppDelegate.swift in Sources */,
+				68DF04EA2AB7591F00724788 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68DF04F62AB7592500724788 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DF04FF2AB7592500724788 /* MobiletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68DF05002AB7592500724788 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DF05092AB7592500724788 /* MobiletUITests.swift in Sources */,
+				68DF050B2AB7592500724788 /* MobiletUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68DF04FC2AB7592500724788 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68DF04E32AB7591F00724788 /* Mobilet */;
+			targetProxy = 68DF04FB2AB7592500724788 /* PBXContainerItemProxy */;
+		};
+		68DF05062AB7592500724788 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68DF04E32AB7591F00724788 /* Mobilet */;
+			targetProxy = 68DF05052AB7592500724788 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68DF04ED2AB7591F00724788 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68DF04EE2AB7591F00724788 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68DF04F22AB7592400724788 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68DF04F32AB7592400724788 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68DF050C2AB7592500724788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68DF050D2AB7592500724788 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68DF050F2AB7592500724788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SV85FQNW59;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mobilet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benji.mobilet.Mobilet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68DF05102AB7592500724788 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SV85FQNW59;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mobilet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benji.mobilet.Mobilet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68DF05122AB7592500724788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SV85FQNW59;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benji.mobilet.MobiletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobilet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mobilet";
+			};
+			name = Debug;
+		};
+		68DF05132AB7592500724788 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SV85FQNW59;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benji.mobilet.MobiletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobilet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mobilet";
+			};
+			name = Release;
+		};
+		68DF05152AB7592500724788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SV85FQNW59;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benji.mobilet.MobiletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mobilet;
+			};
+			name = Debug;
+		};
+		68DF05162AB7592500724788 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SV85FQNW59;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benji.mobilet.MobiletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mobilet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68DF04DF2AB7591F00724788 /* Build configuration list for PBXProject "Mobilet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68DF050C2AB7592500724788 /* Debug */,
+				68DF050D2AB7592500724788 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68DF050E2AB7592500724788 /* Build configuration list for PBXNativeTarget "Mobilet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68DF050F2AB7592500724788 /* Debug */,
+				68DF05102AB7592500724788 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68DF05112AB7592500724788 /* Build configuration list for PBXNativeTarget "MobiletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68DF05122AB7592500724788 /* Debug */,
+				68DF05132AB7592500724788 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68DF05142AB7592500724788 /* Build configuration list for PBXNativeTarget "MobiletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68DF05152AB7592500724788 /* Debug */,
+				68DF05162AB7592500724788 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68DF04DC2AB7591F00724788 /* Project object */;
+}
