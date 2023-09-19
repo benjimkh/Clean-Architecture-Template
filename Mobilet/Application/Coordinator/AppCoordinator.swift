@@ -43,7 +43,6 @@ class AppCoordinator: Coordinator {
     ///
     /// - Parameter transaction: The transaction for which to display details.
     func showTransactionDetails(for transaction: Entities.Responses.Transaction) {
-        // Implement the logic to navigate to the transaction details screen here.
-        // You can push a new view controller or present a modal view controller as needed.
+        /// - TODO: for future :)
     }
 }

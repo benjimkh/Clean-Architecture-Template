@@ -14,3 +14,11 @@ extension Entities.Responses {
         let avatar: String?       // URL to the person's avatar or profile picture
     }
 }
+extension Entities.Responses.Person: Equatable {
+    static func == (lhs: Entities.Responses.Person, rhs: Entities.Responses.Person) -> Bool {
+        return lhs.id == rhs.id &&
+        lhs.name == rhs.name &&
+        lhs.avatar == rhs.avatar
+
+    }
+}

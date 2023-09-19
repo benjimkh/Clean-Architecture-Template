@@ -27,3 +27,18 @@ extension Entities.Responses {
         
     }
 }
+extension Entities.Responses.Transaction: Equatable {
+    static func == (lhs: Entities.Responses.Transaction, rhs: Entities.Responses.Transaction) -> Bool {
+
+        return lhs.id == rhs.id &&
+            lhs.date == rhs.date &&
+            lhs.amount == rhs.amount &&
+            lhs.userDescription == rhs.userDescription &&
+            lhs.status == rhs.status &&
+            lhs.isWithdraw == rhs.isWithdraw &&
+            lhs.bank == rhs.bank &&
+            lhs.person == rhs.person
+        // Add more properties as needed for your comparison.
+    }
+}
+

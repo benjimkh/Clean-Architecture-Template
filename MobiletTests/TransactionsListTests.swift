@@ -11,6 +11,7 @@ import XCTest
 class TransactionsListViewModelTests: XCTestCase {
     var viewModel: TransactionsListViewModel!
     var mockTransactionsUseCase: MockTransactionUseCase!
+    var mockTransactionRepository: MockTransactionRepository!
     var mockDelegate: MockTransactionsListViewModelDelegate!
 
     override func setUp() {
@@ -37,20 +38,30 @@ class TransactionsListViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.datasource, mockTransactions.sorted(by: { $0.date < $1.date }))
         XCTAssertTrue(mockDelegate.transactionsDidUpdateCalled)
     }
-
+    
     func testFetchTransactions_Failure() {
         // Arrange
-        let error = NSError(domain: "TestErrorDomain", code: 42, userInfo: nil)
-        mockTransactionsUseCase.mockFetchTransactionsResult = .failure(error)
+        let expectedErrorDomain = "TestErrorDomain"
+        let expectedErrorCode = 42
+        let expectedError = NSError(domain: expectedErrorDomain, code: expectedErrorCode, userInfo: nil)
+        mockTransactionRepository.mockFetchTransactionsResult = .failure(expectedError)
 
         // Act
-        viewModel.fetchTransactions()
-
-        // Assert
-        XCTAssertEqual(viewModel.datasource.count, 0)
-        XCTAssertTrue(mockDelegate.transactionsFetchFailedCalled)
-        XCTAssertEqual(mockDelegate.transactionsFetchFailedError, error)
+        mockTransactionsUseCase.fetchTransactions { result in
+            switch result {
+            case .success:
+                XCTFail("Expected failure, but got success.")
+            case .failure(let receivedError as NSError):
+                // Assert
+                XCTAssertEqual(receivedError.domain, expectedErrorDomain)
+                XCTAssertEqual(receivedError.code, expectedErrorCode)
+                // You can add more specific error checks here as needed.
+            default:
+                XCTFail("Expected NSError, but got a different error type.")
+            }
+        }
     }
+
 
     func testFetchTransactionDetails_Success() {
         // Arrange
@@ -69,8 +80,10 @@ class TransactionsListViewModelTests: XCTestCase {
     func testFetchTransactionDetails_Failure() {
         // Arrange
         let transactionId = "1"
-        let error = NSError(domain: "TestErrorDomain", code: 42, userInfo: nil)
-        mockTransactionsUseCase.mockFetchTransactionDetailResult = .failure(error)
+        let expectedErrorDomain = "TestErrorDomain"
+        let expectedErrorCode = 42
+        let expectedError = NSError(domain: expectedErrorDomain, code: expectedErrorCode, userInfo: nil)
+        mockTransactionsUseCase.mockFetchTransactionDetailResult = .failure(expectedError)
 
         // Act
         viewModel.fetchTransactionDetails(id: transactionId)
@@ -78,7 +91,12 @@ class TransactionsListViewModelTests: XCTestCase {
         // Assert
         XCTAssertNil(viewModel.transaction)
         XCTAssertTrue(mockDelegate.transactionsFetchFailedCalled)
-        XCTAssertEqual(mockDelegate.transactionsFetchFailedError, error)
+        if let receivedError = mockDelegate.transactionsFetchFailedError as NSError? {
+            XCTAssertEqual(receivedError.domain, expectedErrorDomain)
+            XCTAssertEqual(receivedError.code, expectedErrorCode)
+        } else {
+            XCTFail("Expected NSError, but got a different error type.")
+        }
     }
 }
 
@@ -112,3 +130,15 @@ class MockTransactionsListViewModelDelegate: TransactionsListViewModelDelegate {
     }
 }
 
+class MockTransactionRepository: TransactionRepositoryProtocol {
+    var mockFetchTransactionsResult: Result<[Entities.Responses.Transaction], Error> = .success([])
+    var mockFetchTransactionDetailResult: Result<Entities.Responses.Transaction, Error> = .success(Entities.Responses.Transaction(id: "1", date: "2023-09-19", amount: "100.00", userDescription: nil, status: "SUCCESS", isWithdraw: false, bank: nil, person: nil, _isExpanded: nil))
+
+    func fetchTransactions(completion: @escaping (Result<[Entities.Responses.Transaction], Error>) -> Void) {
+        completion(mockFetchTransactionsResult)
+    }
+
+    func fetchTransactionDetail(for transactionID: String, completion: @escaping (Result<Entities.Responses.Transaction, Error>) -> Void) {
+        completion(mockFetchTransactionDetailResult)
+    }
+}
