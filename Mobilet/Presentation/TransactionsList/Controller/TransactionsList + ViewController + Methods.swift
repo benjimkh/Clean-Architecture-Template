@@ -17,8 +17,6 @@ extension TransactionsListViewController {
         view.backgroundColor = .white
         
         view.addSubview(tableView)
-        
-        // Add constraints to the tableView (example: customize as needed)
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),

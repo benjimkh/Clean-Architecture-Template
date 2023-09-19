@@ -53,6 +53,14 @@ extension TransactionsListViewController: TransactionsListViewModelDelegate {
         }
     }
 }
+
+/// When a transaction cell is tapped, this method is called to handle the expansion or collapse of
+/// transaction details views. It iterates through the view model's data source to determine which
+/// cell was tapped and updates its `_isExpanded` property accordingly. It also toggles the visibility
+/// of the details view associated with the tapped cell. Finally, it triggers a table view update to
+/// reflect the changes in cell heights.
+///
+/// - Parameter id: The ID of the tapped transaction cell.
 extension TransactionsListViewController: cellDellegate {
     func didTapOnTransaction(id: String) {
 
@@ -60,19 +68,19 @@ extension TransactionsListViewController: cellDellegate {
             if item.id != id {
                 viewModel.datasource[index]._isExpanded = false
 
+                // Hide details view of other cells
                 (self.tableView.visibleCells as? [TransactionsListViewController.Cell])?[safe: index]?.detailsView.isHidden = true
             } else {
                 viewModel.datasource[index]._isExpanded = !(viewModel.datasource[index]._isExpanded ?? false)
 
+                // Toggle details view visibility for the tapped cell
                 (self.tableView.cellForRow(at: IndexPath(row: index, section: 0)) as? TransactionsListViewController.Cell)?.detailsView.isHidden = (viewModel.datasource[index]._isExpanded ?? false) ? false : true
 
             }
         }
 
-
+        // Trigger table view updates to adjust cell heights
         self.tableView.beginUpdates()
         self.tableView.endUpdates()
-
-
     }
 }

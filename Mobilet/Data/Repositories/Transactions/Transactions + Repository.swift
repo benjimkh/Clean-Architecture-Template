@@ -7,10 +7,18 @@
 
 import Foundation
 
+/// The `TransactionRepository` class is responsible for fetching transaction data from the API.
+///
+/// It conforms to the `TransactionRepositoryProtocol` and utilizes a `NetworkManager` to make
+/// network requests and decode JSON responses into `Entities.Responses.Transaction` objects.
 class TransactionRepository: TransactionRepositoryProtocol {
     
+    /// The network manager responsible for making API requests.
     private let networkManager: NetworkManager
 
+    /// Initializes the repository with the provided network manager.
+    ///
+    /// - Parameter networkManager: The network manager used for making API requests.
     init(networkManager: NetworkManager) {
         self.networkManager = networkManager
     }
@@ -41,7 +49,11 @@ class TransactionRepository: TransactionRepositoryProtocol {
         }
     }
 
-    
+    /// Fetch transaction details for a specific transaction by its ID from the API.
+    ///
+    /// - Parameters:
+    ///   - transactionID: The ID of the transaction to fetch details for.
+    ///   - completion: A closure that receives a result containing a transaction or an error.
     func fetchTransactionDetail(for transactionID: String, completion: @escaping (Result<Entities.Responses.Transaction, Error>) -> Void) {
         let endpoint = TransactionDetailsEndpoint(id: transactionID)
 
@@ -50,7 +62,7 @@ class TransactionRepository: TransactionRepositoryProtocol {
             switch result {
             case .success(let data):
                 do {
-                    // Decode the JSON data into an array of Transaction objects
+                    // Decode the JSON data into a Transaction object
                     let transaction = try JSONDecoder().decode(Entities.Responses.Transaction.self, from: data)
                     completion(.success(transaction))
                 } catch {
@@ -63,6 +75,5 @@ class TransactionRepository: TransactionRepositoryProtocol {
             }
         }
     }
-    
-
 }
+

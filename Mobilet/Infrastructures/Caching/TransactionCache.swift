@@ -7,12 +7,18 @@
 
 import Foundation
 
+/// The `TransactionCache` class provides a simple caching mechanism for storing and retrieving
+/// transactions using UserDefaults.
 class TransactionCache {
+    /// Shared singleton instance of the `TransactionCache`.
     static let shared = TransactionCache()
 
+    /// UserDefaults instance used for storage.
     private let userDefaults = UserDefaults.standard
 
-    // Store transactions in UserDefaults
+    /// Stores an array of transactions in UserDefaults.
+    ///
+    /// - Parameter transactions: The array of transactions to be stored.
     func storeTransactions(_ transactions: [Entities.Responses.Transaction]) {
         do {
             let encoder = JSONEncoder()
@@ -23,7 +29,9 @@ class TransactionCache {
         }
     }
 
-    // Retrieve transactions from UserDefaults
+    /// Retrieves an array of transactions from UserDefaults.
+    ///
+    /// - Returns: An array of transactions if found, or an empty array if not found or if there's an error.
     func retrieveTransactions() -> [Entities.Responses.Transaction] {
         if let encodedTransactions = userDefaults.data(forKey: "cachedTransactions") {
             do {
@@ -37,5 +45,6 @@ class TransactionCache {
         return []
     }
 }
+
 
 
