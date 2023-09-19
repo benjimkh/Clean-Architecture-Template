@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		6868A4EF2AB8D4BF00542E59 /* TransactionsDetailsUseCase + Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868A4EE2AB8D4BF00542E59 /* TransactionsDetailsUseCase + Protocol.swift */; };
+		6868A4F22AB95F3F00542E59 /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868A4F12AB95F3F00542E59 /* String + Extensions.swift */; };
+		6868A4F72AB9737800542E59 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868A4F62AB9737800542E59 /* UIView + Extension.swift */; };
+		6868A4F92AB97BF400542E59 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868A4F82AB97BF400542E59 /* BottomSheet.swift */; };
+		6868A4FC2AB9875B00542E59 /* TransactionList + ViewController + Cell + Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868A4FB2AB9875B00542E59 /* TransactionList + ViewController + Cell + Methods.swift */; };
+		6868A4FE2AB98AAF00542E59 /* TransactionsList + ViewController + Cell + DetailsHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868A4FD2AB98AAF00542E59 /* TransactionsList + ViewController + Cell + DetailsHolder.swift */; };
+		6868A5002AB9925700542E59 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868A4FF2AB9925700542E59 /* ImageDownloader.swift */; };
+		6868A5022AB993EE00542E59 /* TransactionsList + ViewController + Cell + Conformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868A5012AB993EE00542E59 /* TransactionsList + ViewController + Cell + Conformance.swift */; };
+		6868A5052AB9A02E00542E59 /* TransactionCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868A5042AB9A02E00542E59 /* TransactionCache.swift */; };
+		6868A5072AB9B85500542E59 /* Array + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868A5062AB9B85500542E59 /* Array + Extensions.swift */; };
+		6868A5342AB9E68800542E59 /* TransactionsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868A5322AB9E68800542E59 /* TransactionsListTests.swift */; };
 		68DF04E82AB7591F00724788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF04E72AB7591F00724788 /* AppDelegate.swift */; };
 		68DF04EC2AB7591F00724788 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF04EB2AB7591F00724788 /* ViewController.swift */; };
 		68DF04F12AB7592400724788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DF04F02AB7592400724788 /* Assets.xcassets */; };
 		68DF04F42AB7592400724788 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68DF04F22AB7592400724788 /* LaunchScreen.storyboard */; };
-		68DF04FF2AB7592500724788 /* MobiletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF04FE2AB7592500724788 /* MobiletTests.swift */; };
 		68DF05092AB7592500724788 /* MobiletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF05082AB7592500724788 /* MobiletUITests.swift */; };
 		68DF050B2AB7592500724788 /* MobiletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF050A2AB7592500724788 /* MobiletUITestsLaunchTests.swift */; };
 		68DF052E2AB7651600724788 /* Network + Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF052D2AB7651600724788 /* Network + Manager.swift */; };
@@ -57,6 +66,16 @@
 
 /* Begin PBXFileReference section */
 		6868A4EE2AB8D4BF00542E59 /* TransactionsDetailsUseCase + Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsDetailsUseCase + Protocol.swift"; sourceTree = "<group>"; };
+		6868A4F12AB95F3F00542E59 /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
+		6868A4F62AB9737800542E59 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		6868A4F82AB97BF400542E59 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		6868A4FB2AB9875B00542E59 /* TransactionList + ViewController + Cell + Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionList + ViewController + Cell + Methods.swift"; sourceTree = "<group>"; };
+		6868A4FD2AB98AAF00542E59 /* TransactionsList + ViewController + Cell + DetailsHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsList + ViewController + Cell + DetailsHolder.swift"; sourceTree = "<group>"; };
+		6868A4FF2AB9925700542E59 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		6868A5012AB993EE00542E59 /* TransactionsList + ViewController + Cell + Conformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsList + ViewController + Cell + Conformance.swift"; sourceTree = "<group>"; };
+		6868A5042AB9A02E00542E59 /* TransactionCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCache.swift; sourceTree = "<group>"; };
+		6868A5062AB9B85500542E59 /* Array + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array + Extensions.swift"; sourceTree = "<group>"; };
+		6868A5322AB9E68800542E59 /* TransactionsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListTests.swift; sourceTree = "<group>"; };
 		68DF04E42AB7591F00724788 /* Mobilet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mobilet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68DF04E72AB7591F00724788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68DF04EB2AB7591F00724788 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +83,6 @@
 		68DF04F32AB7592400724788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68DF04F52AB7592400724788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68DF04FA2AB7592500724788 /* MobiletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		68DF04FE2AB7592500724788 /* MobiletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiletTests.swift; sourceTree = "<group>"; };
 		68DF05042AB7592500724788 /* MobiletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68DF05082AB7592500724788 /* MobiletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiletUITests.swift; sourceTree = "<group>"; };
 		68DF050A2AB7592500724788 /* MobiletUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiletUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -116,6 +134,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6868A4F02AB95F2C00542E59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6868A4F12AB95F3F00542E59 /* String + Extensions.swift */,
+				6868A4F62AB9737800542E59 /* UIView + Extension.swift */,
+				6868A5062AB9B85500542E59 /* Array + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6868A4FA2AB9872E00542E59 /* Childs */ = {
+			isa = PBXGroup;
+			children = (
+				B1403BBA2AB86EE3002C0444 /* TransactionsList + ViewController + Cell.swift */,
+				6868A4FD2AB98AAF00542E59 /* TransactionsList + ViewController + Cell + DetailsHolder.swift */,
+				6868A4FB2AB9875B00542E59 /* TransactionList + ViewController + Cell + Methods.swift */,
+				6868A5012AB993EE00542E59 /* TransactionsList + ViewController + Cell + Conformance.swift */,
+			);
+			path = Childs;
+			sourceTree = "<group>";
+		};
+		6868A5032AB9A01600542E59 /* Caching */ = {
+			isa = PBXGroup;
+			children = (
+				6868A5042AB9A02E00542E59 /* TransactionCache.swift */,
+			);
+			path = Caching;
+			sourceTree = "<group>";
+		};
 		68DF04DB2AB7591F00724788 = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +203,7 @@
 		68DF04FD2AB7592500724788 /* MobiletTests */ = {
 			isa = PBXGroup;
 			children = (
-				68DF04FE2AB7592500724788 /* MobiletTests.swift */,
+				6868A5322AB9E68800542E59 /* TransactionsListTests.swift */,
 			);
 			path = MobiletTests;
 			sourceTree = "<group>";
@@ -209,7 +256,6 @@
 		68DF051B2AB75DBC00724788 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				68DF052C2AB763C400724788 /* Network */,
 				B1403BA22AB82DD7002C0444 /* UseCases */,
 				68DF051C2AB75DCB00724788 /* Repositories */,
 			);
@@ -227,7 +273,6 @@
 		68DF051D2AB75DDD00724788 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				68DF051F2AB75E1A00724788 /* TransactionsDetails */,
 				68DF051E2AB75DEF00724788 /* TransactionsList */,
 			);
 			path = Presentation;
@@ -242,27 +287,11 @@
 			path = TransactionsList;
 			sourceTree = "<group>";
 		};
-		68DF051F2AB75E1A00724788 /* TransactionsDetails */ = {
-			isa = PBXGroup;
-			children = (
-				68DF05232AB75E7A00724788 /* ViewModel */,
-				68DF05202AB75E4E00724788 /* Controller */,
-			);
-			path = TransactionsDetails;
-			sourceTree = "<group>";
-		};
-		68DF05202AB75E4E00724788 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		68DF05212AB75E5E00724788 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				B1403BB42AB86C30002C0444 /* TransactionsList + ViewController.swift */,
-				B1403BBA2AB86EE3002C0444 /* TransactionsList + ViewController + Cell.swift */,
+				6868A4FA2AB9872E00542E59 /* Childs */,
 				B1403BB62AB86C9D002C0444 /* TransactionsList + ViewController + Methods.swift */,
 				B1403BB82AB86D25002C0444 /* TransactionsList + ViewController + Conformance.swift */,
 			);
@@ -274,13 +303,6 @@
 			children = (
 				B1403BB02AB86B65002C0444 /* TransactionsList + ViewModel.swift */,
 				B1403BB22AB86BDC002C0444 /* TransactionsList + ViewModel + Protocol.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		68DF05232AB75E7A00724788 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -304,6 +326,8 @@
 		68DF05272AB7604900724788 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6868A4F02AB95F2C00542E59 /* Extensions */,
+				6868A4F82AB97BF400542E59 /* BottomSheet.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -311,7 +335,9 @@
 		68DF052A2AB761FB00724788 /* Infrastructures */ = {
 			isa = PBXGroup;
 			children = (
+				6868A5032AB9A01600542E59 /* Caching */,
 				68DF052B2AB7621100724788 /* Network */,
+				6868A4FF2AB9925700542E59 /* ImageDownloader.swift */,
 			);
 			path = Infrastructures;
 			sourceTree = "<group>";
@@ -323,13 +349,6 @@
 				68DF052F2AB765F500724788 /* Network + Client.swift */,
 				68DF05312AB7665E00724788 /* Endpoints */,
 				68DF05362AB76AF500724788 /* Network + Errors.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		68DF052C2AB763C400724788 /* Network */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -526,19 +545,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1403B9C2AB82BDF002C0444 /* Person.swift in Sources */,
+				6868A4F92AB97BF400542E59 /* BottomSheet.swift in Sources */,
+				6868A4FE2AB98AAF00542E59 /* TransactionsList + ViewController + Cell + DetailsHolder.swift in Sources */,
 				B1403BAA2AB82F31002C0444 /* TransactionsList + UseCase.swift in Sources */,
 				B1403BB12AB86B65002C0444 /* TransactionsList + ViewModel.swift in Sources */,
+				6868A5022AB993EE00542E59 /* TransactionsList + ViewController + Cell + Conformance.swift in Sources */,
 				6868A4EF2AB8D4BF00542E59 /* TransactionsDetailsUseCase + Protocol.swift in Sources */,
 				68DF05352AB768BD00724788 /* Endpoints + Transactions.swift in Sources */,
 				B1403BBB2AB86EE3002C0444 /* TransactionsList + ViewController + Cell.swift in Sources */,
 				B1403BB92AB86D25002C0444 /* TransactionsList + ViewController + Conformance.swift in Sources */,
+				6868A4FC2AB9875B00542E59 /* TransactionList + ViewController + Cell + Methods.swift in Sources */,
+				6868A5052AB9A02E00542E59 /* TransactionCache.swift in Sources */,
 				68DF05302AB765F500724788 /* Network + Client.swift in Sources */,
 				B1403BB32AB86BDC002C0444 /* TransactionsList + ViewModel + Protocol.swift in Sources */,
 				B1403B9E2AB82C53002C0444 /* NameSpace + Entities.swift in Sources */,
 				B1403BB52AB86C30002C0444 /* TransactionsList + ViewController.swift in Sources */,
 				B1403BB72AB86C9D002C0444 /* TransactionsList + ViewController + Methods.swift in Sources */,
 				B1403BBD2AB8799F002C0444 /* AppCoordinator.swift in Sources */,
+				6868A5002AB9925700542E59 /* ImageDownloader.swift in Sources */,
+				6868A5072AB9B85500542E59 /* Array + Extensions.swift in Sources */,
 				B1403B982AB82B33002C0444 /* Transaction.swift in Sources */,
+				6868A4F22AB95F3F00542E59 /* String + Extensions.swift in Sources */,
 				68DF05372AB76AF500724788 /* Network + Errors.swift in Sources */,
 				68DF04EC2AB7591F00724788 /* ViewController.swift in Sources */,
 				B1403BAC2AB83139002C0444 /* TransactionsDetails + UseCase.swift in Sources */,
@@ -546,6 +573,7 @@
 				68DF05332AB7669100724788 /* Endpoints + Protocol.swift in Sources */,
 				B1403B9A2AB82BC7002C0444 /* Bank.swift in Sources */,
 				B1403BA52AB82E2B002C0444 /* TransactionsListUseCase + Protocol.swift in Sources */,
+				6868A4F72AB9737800542E59 /* UIView + Extension.swift in Sources */,
 				68DF052E2AB7651600724788 /* Network + Manager.swift in Sources */,
 				B1403BA02AB82D36002C0444 /* TransactionsRepository + Protocol.swift in Sources */,
 				68DF04E82AB7591F00724788 /* AppDelegate.swift in Sources */,
@@ -556,7 +584,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68DF04FF2AB7592500724788 /* MobiletTests.swift in Sources */,
+				6868A5342AB9E68800542E59 /* TransactionsListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,7 +745,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 947C6V5AGA;
+				DEVELOPMENT_TEAM = 35M7M2UWU5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Mobilet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -746,7 +774,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 947C6V5AGA;
+				DEVELOPMENT_TEAM = 35M7M2UWU5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Mobilet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

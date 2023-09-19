@@ -13,7 +13,7 @@ extension Entities.Responses {
         let id: String           // Unique identifier for the transaction
         let date: String           // Date and time of the transaction
         let amount: String      // Transaction amount
-        let userDescription: String // User-provided description for the transaction
+        let userDescription: String? // User-provided description for the transaction
         let status: String       // Transaction status (e.g., "SUCCESS" or "FAILURE")
         let isWithdraw: Bool     // Indicates whether it's a withdrawal transaction
         
@@ -22,6 +22,8 @@ extension Entities.Responses {
         
         let bank: Bank?           // Bank details related to the transaction
         let person: Person?       // Information about the person involved in the transaction
+        
+        var _isExpanded: Bool? // Transient 
         
     }
 }

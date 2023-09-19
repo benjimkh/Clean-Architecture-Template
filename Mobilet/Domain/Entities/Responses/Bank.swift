@@ -9,6 +9,6 @@ import Foundation
 extension Entities.Responses {
     struct Bank: Codable {
         let name: String         // Name of the bank
-        let logoURL: URL         // URL to the bank's logo
+        let logo: String?         // URL to the bank's logo
     }
 }

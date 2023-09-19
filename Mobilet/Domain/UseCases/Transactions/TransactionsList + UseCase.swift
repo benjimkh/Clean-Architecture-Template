@@ -8,7 +8,8 @@
 import Foundation
 
 /// A default implementation of the `TransactionListUseCase` protocol.
-class TransactionListUseCase: TransactionListUseCaseProtocol {
+class TransactionListUseCase: TransactionUseCaseProtocol {
+    
     private let transactionRepository: TransactionRepositoryProtocol
     
     /// Initializes the use case with a transaction repository.
@@ -24,4 +25,9 @@ class TransactionListUseCase: TransactionListUseCaseProtocol {
     func fetchTransactions(completion: @escaping (Result<[Entities.Responses.Transaction], Error>) -> Void) {
         transactionRepository.fetchTransactions(completion: completion)
     }
+    func fetchTransactionDetail(for transactionID: String, completion: @escaping (Result<Entities.Responses.Transaction, Error>) -> Void) {
+        transactionRepository.fetchTransactionDetail(for: transactionID, completion: completion)
+
+    }
+
 }

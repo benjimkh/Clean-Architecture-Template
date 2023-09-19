@@ -11,6 +11,6 @@ extension Entities.Responses {
     struct Person: Codable {
         let id: String           // Unique identifier for the person
         let name: String         // Name of the person
-        let avatarURL: URL       // URL to the person's avatar or profile picture
+        let avatar: String?       // URL to the person's avatar or profile picture
     }
 }

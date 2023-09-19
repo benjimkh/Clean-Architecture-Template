@@ -15,6 +15,7 @@ class TransactionsListViewController: UIViewController {
     // MARK: - Properties
 
     let viewModel: TransactionsListViewModel
+    let bottomSheetView = BottomSheetView()
 
     // MARK: - UI Components (Example: You can customize as needed)
 
@@ -24,6 +25,7 @@ class TransactionsListViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorStyle = .none
 
         tableView.register(TransactionsListViewController.Cell.self, forCellReuseIdentifier: "TransactionsListViewController.Cell")
 

@@ -43,7 +43,25 @@ class TransactionRepository: TransactionRepositoryProtocol {
 
     
     func fetchTransactionDetail(for transactionID: String, completion: @escaping (Result<Entities.Responses.Transaction, Error>) -> Void) {
-        
+        let endpoint = TransactionDetailsEndpoint(id: transactionID)
+
+        // Use the network manager to make a request to the API
+        networkManager.request(endpoint) { result in
+            switch result {
+            case .success(let data):
+                do {
+                    // Decode the JSON data into an array of Transaction objects
+                    let transaction = try JSONDecoder().decode(Entities.Responses.Transaction.self, from: data)
+                    completion(.success(transaction))
+                } catch {
+                    // Handle decoding errors
+                    completion(.failure(error))
+                }
+            case .failure(let error):
+                // Handle network request errors
+                completion(.failure(error))
+            }
+        }
     }
     
 

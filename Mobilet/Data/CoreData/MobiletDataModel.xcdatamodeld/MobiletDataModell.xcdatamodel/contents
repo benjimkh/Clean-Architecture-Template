@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22D68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="TransactionCoreModel" representedClassName="TransactionCoreModel" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" attributeType="String"/>
+        <attribute name="bankName" optional="YES" attributeType="String"/>
+        <attribute name="date" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="isWithdraw" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="personName" optional="YES" attributeType="String"/>
+        <attribute name="status" attributeType="String"/>
+        <attribute name="userDescription" optional="YES" attributeType="String"/>
+    </entity>
+</model>

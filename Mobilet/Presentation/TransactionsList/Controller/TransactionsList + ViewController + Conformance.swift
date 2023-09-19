@@ -18,9 +18,19 @@ extension TransactionsListViewController: UITableViewDataSource, UITableViewDele
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Dequeue and configure your custom UITableViewCell here
         let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionsListViewController.Cell", for: indexPath) as! TransactionsListViewController.Cell
+        cell.delegate = self
+        cell.transactionListViewModel = self.viewModel
         let transaction = viewModel.datasource[indexPath.row]
         cell.configure(with: transaction)
         return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if self.viewModel.datasource[indexPath.row]._isExpanded ?? false {
+            return self.view.frame.width * 0.7
+        } else {
+           return 150
+        }
+
     }
 }
 // MARK: - TransactionsListViewModelDelegate
@@ -35,11 +45,34 @@ extension TransactionsListViewController: TransactionsListViewModelDelegate {
     }
 
     func transactionsFetchFailed(with error: Error) {
-        // Handle the error, e.g., show an alert
-        let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        DispatchQueue.main.async {
-            self.present(alert, animated: true, completion: nil)
+        if (error as NSError).code == -1009 {
+            self.viewModel.datasource = TransactionCache.shared.retrieveTransactions()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
+    }
+}
+extension TransactionsListViewController: cellDellegate {
+    func didTapOnTransaction(id: String) {
+
+        for (index, item) in viewModel.datasource.enumerated() {
+            if item.id != id {
+                viewModel.datasource[index]._isExpanded = false
+
+                (self.tableView.visibleCells as? [TransactionsListViewController.Cell])?[safe: index]?.detailsView.isHidden = true
+            } else {
+                viewModel.datasource[index]._isExpanded = !(viewModel.datasource[index]._isExpanded ?? false)
+
+                (self.tableView.cellForRow(at: IndexPath(row: index, section: 0)) as? TransactionsListViewController.Cell)?.detailsView.isHidden = (viewModel.datasource[index]._isExpanded ?? false) ? false : true
+
+            }
+        }
+
+
+        self.tableView.beginUpdates()
+        self.tableView.endUpdates()
+
+
     }
 }
